@@ -1,6 +1,6 @@
 {
   "name": "tie-webpack-start-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "build": "tsnl build",
     "test": "tsnl test",
     "lint": "tsnl lint",
-    "lint:fix": "tsnt lint --fix"
+    "lint:fix": "tsnt lint --fix",
+    "release": "standard-version"
   },
   "eslintConfig": {
     "extends": "tie-app"
@@ -31,6 +32,7 @@
   },
   "dependencies": {
     "cross-spawn": "^7.0.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "standard-version": "^7.1.0"
   }
 }
