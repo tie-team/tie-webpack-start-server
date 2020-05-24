@@ -32,11 +32,11 @@ export default class StartServerPlugin {
       const command = getCommand()
       const startArgs: string[] = [
         '--watch',
-        join(cwd, `./dist/${name}`),
+        join(cwd, `./generated/${name}`),
         '--ext',
         'js',
         '--exec',
-        `node dist/${name}`,
+        `node generated/${name}`,
       ]
 
       if (!compilation.assets[name]) {
